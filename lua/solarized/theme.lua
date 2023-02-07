@@ -25,7 +25,7 @@ theme.loadSyntax = function ()
 		Macro =						{ fg = solarized.cyan }, -- same as Define
 		Typedef =					{ fg = solarized.red }, -- A typedef
 		PreCondit =					{ fg = solarized.cyan }, -- preprocessor #if, #else, #endif, etc.
-		Special =					{ fg = solarized.red }, -- any special symbol
+		Special =					{ fg = solarized.purple }, -- any special symbol
 		SpecialChar =				{ fg = solarized.pink }, -- special character in a constant
 		Tag =						{ fg = solarized.red }, -- you can use CTRL-] on this
 		Delimiter =					{ fg = solarized.cyan }, -- character that needs attention like , or .

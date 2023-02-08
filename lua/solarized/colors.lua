@@ -10,18 +10,18 @@ local bases = {
 }
 
 local solarized = {
-  white = '#eee8d5',
-  gray = '#073642',
-  black = '#002b36',
-  red = '#dc322f',
-  yellow = '#b58900',
-  orange = '#cb4b16',
-  magenta = '#d33682',
-  violet = '#6c71c4',
-  purple = '#6c71c4',
-  blue = '#268bd2',
-  cyan = '#2aa198',
-  green = '#859900',
+  white = "#eee8d5",
+  gray = "#073642",
+  black = "#002b36",
+  red = "#dc322f",
+  yellow = "#b58900",
+  orange = "#cb4b16",
+  magenta = "#d33682",
+  violet = "#6c71c4",
+  purple = "#6c71c4",
+  blue = "#268bd2",
+  cyan = "#2aa198",
+  green = "#859900",
 
   bg_light =       bases['base3'],
 	bg_light_alt =   bases['base2'],
@@ -42,8 +42,8 @@ local solarized = {
 	cursor =        '#268bd2',
 	accent =        '#073642',
 
-  error =         '#dc322f',
-	link =          '#2aa198',
+  error = "#dc322f",
+  link = "#2aa198",
 
 	none =          'NONE'
 }

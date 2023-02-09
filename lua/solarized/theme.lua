@@ -8,7 +8,7 @@ theme.loadSyntax = function ()
 	local syntax = {
 		Type =						{ fg = solarized.yellow }, -- int, long, char, etc.
 		StorageClass =				{ fg = solarized.cyan }, -- static, register, volatile, etc.
-		Structure =					{ fg = solarized.puple }, -- struct, union, enum, etc.
+		Structure =					{ fg = solarized.yellow }, -- struct, union, enum, etc.
 		Constant =					{ fg = solarized.purple }, -- any constant
 		String =					{ fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
 		Character =					{ fg = solarized.orange }, -- any character constant: 'c', '\n'
@@ -25,7 +25,7 @@ theme.loadSyntax = function ()
 		Macro =						{ fg = solarized.cyan }, -- same as Define
 		Typedef =					{ fg = solarized.cyan }, -- A typedef
 		PreCondit =					{ fg = solarized.cyan }, -- preprocessor #if, #else, #endif, etc.
-		Special =					{ fg = solarized.purple }, -- any special symbol
+		Special =					{ fg = solarized.red }, -- any special symbol
 		SpecialChar =				{ fg = solarized.pink }, -- special character in a constant
 		Tag =						{ fg = solarized.red }, -- you can use CTRL-] on this
 		Delimiter =					{ fg = solarized.cyan }, -- character that needs attention like , or .

@@ -17,8 +17,8 @@ theme.loadSyntax = function ()
 		Float =						{ fg = solarized.cyan }, -- a floating point constant: 2.3e10
 		Statement =					{ fg = solarized.gray }, -- any statement
 		Label =						{ fg = solarized.yellow }, -- case, default, etc.
-		Operator =					{ fg = solarized.cyan }, -- sizeof", "+", "*", etc.
-		Exception =					{ fg = solarized.cyan }, -- try, catch, throw
+		Operator =					{ fg = solarized.cyan, style = "bold" }, -- sizeof", "+", "*", etc.
+		Exception =					{ fg = solarized.cyan, style = "bold" }, -- try, catch, throw
 		PreProc =					{ fg = solarized.yellow }, -- generic Preprocessor
 		Include =					{ fg = solarized.blue }, -- preprocessor #include
 		Define =					{ fg = solarized.gray }, -- preprocessor #define

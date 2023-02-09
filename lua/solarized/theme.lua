@@ -6,7 +6,7 @@ theme.loadSyntax = function ()
     -- Syntax highlight groups
 
 	local syntax = {
-		Type =						{ fg = solarized.purple }, -- int, long, char, etc.
+		Type =						{ fg = solarized.yellow }, -- int, long, char, etc.
 		StorageClass =				{ fg = solarized.cyan }, -- static, register, volatile, etc.
 		Structure =					{ fg = solarized.puple }, -- struct, union, enum, etc.
 		Constant =					{ fg = solarized.yellow }, -- any constant
@@ -16,10 +16,10 @@ theme.loadSyntax = function ()
 		Boolean =					{ fg = solarized.orange }, -- a boolean constant: TRUE, false
 		Float =						{ fg = solarized.orange }, -- a floating point constant: 2.3e10
 		Statement =					{ fg = solarized.pink }, -- any statement
-		Label =						{ fg = solarized.purple }, -- case, default, etc.
+		Label =						{ fg = solarized.yellow }, -- case, default, etc.
 		Operator =					{ fg = solarized.cyan }, -- sizeof", "+", "*", etc.
 		Exception =					{ fg = solarized.cyan }, -- try, catch, throw
-		PreProc =					{ fg = solarized.purple }, -- generic Preprocessor
+		PreProc =					{ fg = solarized.yellow }, -- generic Preprocessor
 		Include =					{ fg = solarized.blue }, -- preprocessor #include
 		Define =					{ fg = solarized.pink }, -- preprocessor #define
 		Macro =						{ fg = solarized.cyan }, -- same as Define
@@ -41,7 +41,7 @@ theme.loadSyntax = function ()
         htmlH2 = { fg = solarized.red, style = "bold" },
         htmlH3 = { fg = solarized.green, style = "bold" },
         htmlH4 = { fg = solarized.yellow, style = "bold" },
-        htmlH5 = { fg = solarized.purple, style = "bold" },
+        htmlH5 = { fg = solarized.yellow, style = "bold" },
         markdownH1 = { fg = solarized.cyan, style = "bold" },
         markdownH2 = { fg = solarized.red, style = "bold" },
         markdownH3 = { fg = solarized.green, style = "bold" },
@@ -61,13 +61,13 @@ theme.loadSyntax = function ()
 
 	-- Italic Keywords
 	if vim.g.solarized_italic_keywords == true then
-		syntax.Conditional =		{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic if, then, else, endif, switch, etc.
-		syntax.Keyword =			{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic for, do, while, etc.
-		syntax.Repeat =				{fg = solarized.purple, bg = solarized.none, style = 'italic'} -- italic any other keyword
+		syntax.Conditional =		{fg = solarized.yellow, bg = solarized.none, style = 'italic'} -- italic if, then, else, endif, switch, etc.
+		syntax.Keyword =			{fg = solarized.yellow, bg = solarized.none, style = 'italic'} -- italic for, do, while, etc.
+		syntax.Repeat =				{fg = solarized.yellow, bg = solarized.none, style = 'italic'} -- italic any other keyword
 	else
-		syntax.Conditional =		{fg = solarized.purple} -- normal if, then, else, endif, switch, etc.
-		syntax.Keyword =			{fg = solarized.purple} -- normal for, do, while, etc.
-		syntax.Repeat =				{fg = solarized.purple} -- normal any other keyword
+		syntax.Conditional =		{fg = solarized.yellow} -- normal if, then, else, endif, switch, etc.
+		syntax.Keyword =			{fg = solarized.yellow} -- normal for, do, while, etc.
+		syntax.Repeat =				{fg = solarized.yellow} -- normal any other keyword
 	end
 
 	-- Italic Function names
@@ -121,11 +121,11 @@ theme.loadEditor = function ()
 		QuickFixLine =			{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
 		qfLineNr =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
 		Search =				{ fg = solarized.highlight, bg = solarized.white, style = 'reverse' },
-		SpecialKey =			{ fg = solarized.purple },
+		SpecialKey =			{ fg = solarized.yellow },
 		SpellBad =				{ fg = solarized.red, bg = solarized.none, style = 'italic,undercurl' },
 		SpellCap =				{ fg = solarized.blue, bg = solarized.none, style = 'italic,undercurl' },
 		SpellLocal =			{ fg = solarized.cyan, bg = solarized.none, style = 'italic,undercurl' },
-		SpellRare =				{ fg = solarized.purple, bg = solarized.none, style = 'italic,undercurl' },
+		SpellRare =				{ fg = solarized.yellow, bg = solarized.none, style = 'italic,undercurl' },
 		StatusLine =			{ fg = solarized.fg, bg = solarized.contrast },
 		StatusLineNC =  		{ fg = solarized.text, bg = solarized.disabled },
 		StatusLineTerm =		{ fg = solarized.fg, bg = solarized.contrast },
@@ -145,7 +145,7 @@ theme.loadEditor = function ()
 		NormalMode =			{ fg = solarized.accent, bg = solarized.none, style = 'reverse' },
 		InsertMode =			{ fg = solarized.green, bg = solarized.none, style = 'reverse' },
 		ReplacelMode =			{ fg = solarized.red, bg = solarized.none, style = 'reverse' },
-		VisualMode =			{ fg = solarized.purple, bg = solarized.none, style = 'reverse' },
+		VisualMode =			{ fg = solarized.yellow, bg = solarized.none, style = 'reverse' },
 		CommandMode =			{ fg = solarized.gray, bg = solarized.none, style = 'reverse' },
 		Warnings =				{ fg = solarized.yellow },
 
@@ -189,7 +189,7 @@ theme.loadTerminal = function ()
 	vim.g.terminal_color_2 = solarized.green
 	vim.g.terminal_color_3 = solarized.yellow
 	vim.g.terminal_color_4 = solarized.blue
-	vim.g.terminal_color_5 = solarized.purple
+	vim.g.terminal_color_5 = solarized.yellow
 	vim.g.terminal_color_6 = solarized.cyan
 	vim.g.terminal_color_7 = solarized.white
 	vim.g.terminal_color_8 = solarized.gray
@@ -197,7 +197,7 @@ theme.loadTerminal = function ()
 	vim.g.terminal_color_10 = solarized.green
 	vim.g.terminal_color_11 = solarized.yellow
 	vim.g.terminal_color_12 = solarized.blue
-	vim.g.terminal_color_13 = solarized.purple
+	vim.g.terminal_color_13 = solarized.yellow
 	vim.g.terminal_color_14 = solarized.cyan
 	vim.g.terminal_color_15 = solarized.white
 
@@ -211,7 +211,7 @@ theme.loadTreeSitter = function ()
         TSAttribute =               { fg = solarized.yellow},    -- (unstable) TODO: docs
         TSBoolean=                  { fg = solarized.orange},    -- For booleans.
         TSCharacter=                { fg = solarized.orange},    -- For characters.
-        TSConstructor =             { fg = solarized.purple}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+        TSConstructor =             { fg = solarized.yellow}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSConstant =                { fg = solarized.yellow },    -- For constants
         TSConstBuiltin =            { fg = solarized.blue },    -- For constant that are built in the language: `nil` in Lua.
         TSConstMacro =              { fg = solarized.blue },    -- For constants that are defined by macros: `NULL` in C.
@@ -236,8 +236,8 @@ theme.loadTreeSitter = function ()
         TSStringRegex =             { fg = solarized.blue }, -- For regexes.
         TSStringEscape =            { fg = solarized.disabled }, -- For escape characters within a string.
         TSSymbol =                  { fg = solarized.yellow},    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = solarized.purple, style = 'bold' },    -- For types.
-        TSTypeBuiltin =             { fg = solarized.purple },    -- For builtin types.
+        TSType =                    { fg = solarized.yellow, style = 'bold' },    -- For types.
+        TSTypeBuiltin =             { fg = solarized.yellow },    -- For builtin types.
         TSTag =                     { fg = solarized.red, style = 'bold' },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = solarized.yellow },    -- Tag delimiter like `<` `>` `/`
         TSText =                    { fg = solarized.text },    -- For strings considered text in a markup language.
@@ -272,12 +272,12 @@ theme.loadTreeSitter = function ()
     end
 
     if vim.g.solarized_italic_functions == true then
-        treesitter.TSFunction =                { fg = solarized.purple, style = 'bold,italic' }    -- For fuction (calls and definitions).
-        treesitter.TSMethod =                  { fg = solarized.purple, style = 'bold,italic' }    -- For method calls and definitions.
+        treesitter.TSFunction =                { fg = solarized.yellow, style = 'bold,italic' }    -- For fuction (calls and definitions).
+        treesitter.TSMethod =                  { fg = solarized.yellow, style = 'bold,italic' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold,italic' }    -- For builtin functions: `table.insert` in Lua.
     else
-        treesitter.TSFunction =                { fg = solarized.purple, style = 'bold' }    -- For fuction (calls and definitions).
-        treesitter.TSMethod =                  { fg = solarized.purple, style = 'bold' }    -- For method calls and definitions.
+        treesitter.TSFunction =                { fg = solarized.yellow, style = 'bold' }    -- For fuction (calls and definitions).
+        treesitter.TSMethod =                  { fg = solarized.yellow, style = 'bold' }    -- For method calls and definitions.
         treesitter.TSFuncBuiltin =             { fg = solarized.yellow, style = 'bold' }    -- For builtin functions: `table.insert` in Lua.
     end
 
@@ -312,10 +312,10 @@ theme.loadLSP = function ()
         LspDiagnosticsFloatingInformation =     { fg = solarized.paleblue }, -- used for "Information" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextInformation =  { fg = solarized.paleblue }, -- Virtual text "Information"
         LspDiagnosticsUnderlineInformation =    { style = 'undercurl', sp = solarized.paleblue }, -- used to underline "Information" diagnostics.
-        LspDiagnosticsDefaultHint =             { fg = solarized.purple  },  -- used for "Hint" diagnostic virtual text
-        LspDiagnosticsSignHint =                { fg = solarized.purple  }, -- used for "Hint" diagnostic signs in sign column
-        LspDiagnosticsFloatingHint =            { fg = solarized.purple  }, -- used for "Hint" diagnostic messages in the diagnostics float
-        LspDiagnosticsVirtualTextHint =         { fg = solarized.purple  }, -- Virtual text "Hint"
+        LspDiagnosticsDefaultHint =             { fg = solarized.yellow  },  -- used for "Hint" diagnostic virtual text
+        LspDiagnosticsSignHint =                { fg = solarized.yellow  }, -- used for "Hint" diagnostic signs in sign column
+        LspDiagnosticsFloatingHint =            { fg = solarized.yellow  }, -- used for "Hint" diagnostic messages in the diagnostics float
+        LspDiagnosticsVirtualTextHint =         { fg = solarized.yellow  }, -- Virtual text "Hint"
         LspDiagnosticsUnderlineHint =           { style = 'undercurl', sp = solarized.paleblue }, -- used to underline "Hint" diagnostics.
         LspReferenceText =                      { fg = solarized.accent, bg = solarized.highlight }, -- used for highlighting "text" references
         LspReferenceRead =                      { fg = solarized.accent, bg = solarized.highlight }, -- used for highlighting "read" references
@@ -333,7 +333,7 @@ theme.loadPlugins = function()
 
         -- LspTrouble
         LspTroubleText =                        { fg = solarized.text },
-        LspTroubleCount =                       { fg = solarized.purple, bg = solarized.active },
+        LspTroubleCount =                       { fg = solarized.yellow, bg = solarized.active },
         LspTroubleNormal =                      { fg = solarized.fg, bg = solarized.sidebar },
 
         -- Diff
@@ -344,11 +344,11 @@ theme.loadPlugins = function()
         diffNewFile =                           { fg = solarized.orange },
         diffFile =                              { fg = solarized.blue },
         diffLine =                              { fg = solarized.comments },
-        diffIndexLine =                         { fg = solarized.purple },
+        diffIndexLine =                         { fg = solarized.yellow },
 
         -- Neogit
         NeogitBranch =                          { fg = solarized.paleblue },
-        NeogitRemote =                          { fg = solarized.purple },
+        NeogitRemote =                          { fg = solarized.yellow },
         NeogitHunkHeader =                      { fg = solarized.fg, bg = solarized.highlight },
         NeogitHunkHeaderHighlight =             { fg = solarized.blue, bg = solarized.contrast },
         NeogitDiffContextHighlight =            { fg = solarized.text, bg = solarized.contrast },
@@ -373,10 +373,10 @@ theme.loadPlugins = function()
 
         -- Telescope
         TelescopePromptBorder =                 { fg = solarized.cyan },
-        TelescopeResultsBorder =                { fg = solarized.purple },
+        TelescopeResultsBorder =                { fg = solarized.yellow },
         TelescopePreviewBorder =                { fg = solarized.green },
-        TelescopeSelectionCaret =               { fg = solarized.purple },
-        TelescopeSelection =                    { fg = solarized.purple },
+        TelescopeSelectionCaret =               { fg = solarized.yellow },
+        TelescopeSelection =                    { fg = solarized.yellow },
         TelescopeMatching =                     { fg = solarized.cyan },
         TelescopeNormal =                       { fg = solarized.fg, bg = solarized.float },
 
@@ -386,7 +386,7 @@ theme.loadPlugins = function()
         NvimTreeGitNew =                        { fg = solarized.green },
         NvimTreeImageFile =                     { fg = solarized.yellow },
         NvimTreeExecFile =                      { fg = solarized.green },
-        NvimTreeSpecialFile =                   { fg = solarized.purple , style = "underline" },
+        NvimTreeSpecialFile =                   { fg = solarized.yellow , style = "underline" },
         NvimTreeFolderName=                     { fg = solarized.paleblue },
         NvimTreeEmptyFolderName=                { fg = solarized.disabled },
         NvimTreeFolderIcon=                     { fg = solarized.accent },
@@ -394,7 +394,7 @@ theme.loadPlugins = function()
         LspDiagnosticsError =                   { fg = solarized.error },
         LspDiagnosticsWarning =                 { fg = solarized.yellow },
         LspDiagnosticsInformation =             { fg = solarized.paleblue },
-        LspDiagnosticsHint =                    { fg = solarized.purple },
+        LspDiagnosticsHint =                    { fg = solarized.yellow },
 
         -- WhichKey
         WhichKey =                              { fg = solarized.accent , style = 'bold'},
@@ -408,10 +408,10 @@ theme.loadPlugins = function()
         DiagnosticError =                       { fg = solarized.error },
         DiagnosticWarning =                     { fg = solarized.yellow },
         DiagnosticInformation =                 { fg = solarized.paleblue },
-        DiagnosticHint =                        { fg = solarized.purple },
+        DiagnosticHint =                        { fg = solarized.yellow },
         DiagnosticTruncateLine =                { fg = solarized.fg },
         LspFloatWinNormal =                     { bg = solarized.contrast },
-        LspFloatWinBorder =                     { fg = solarized.purple },
+        LspFloatWinBorder =                     { fg = solarized.yellow },
         LspSagaBorderTitle =                    { fg = solarized.cyan },
         LspSagaHoverBorder =                    { fg = solarized.paleblue },
         LspSagaRenameBorder =                   { fg = solarized.green },
@@ -419,10 +419,10 @@ theme.loadPlugins = function()
         LspSagaCodeActionBorder =               { fg = solarized.blue },
         LspSagaFinderSelection =                { fg = solarized.green },
         LspSagaCodeActionTitle =                { fg = solarized.paleblue },
-        LspSagaCodeActionContent =              { fg = solarized.purple },
+        LspSagaCodeActionContent =              { fg = solarized.yellow },
         LspSagaSignatureHelpBorder =            { fg = solarized.pink },
-        ReferencesCount =                       { fg = solarized.purple },
-        DefinitionCount =                       { fg = solarized.purple },
+        ReferencesCount =                       { fg = solarized.yellow },
+        DefinitionCount =                       { fg = solarized.yellow },
         DefinitionIcon =                        { fg = solarized.blue },
         ReferencesIcon =                        { fg = solarized.blue },
         TargetWord =                            { fg = solarized.cyan },

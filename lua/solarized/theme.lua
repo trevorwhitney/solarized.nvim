@@ -12,9 +12,9 @@ theme.loadSyntax = function ()
 		Constant =					{ fg = solarized.purple }, -- any constant
 		String =					{ fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
 		Character =					{ fg = solarized.orange }, -- any character constant: 'c', '\n'
-		Number =					{ fg = solarized.orange }, -- a number constant: 5
-		Boolean =					{ fg = solarized.orange }, -- a boolean constant: TRUE, false
-		Float =						{ fg = solarized.orange }, -- a floating point constant: 2.3e10
+		Number =					{ fg = solarized.cyan }, -- a number constant: 5
+		Boolean =					{ fg = solarized.cyan }, -- a boolean constant: TRUE, false
+		Float =						{ fg = solarized.cyan }, -- a floating point constant: 2.3e10
 		Statement =					{ fg = solarized.gray }, -- any statement
 		Label =						{ fg = solarized.yellow }, -- case, default, etc.
 		Operator =					{ fg = solarized.cyan }, -- sizeof", "+", "*", etc.
@@ -23,12 +23,14 @@ theme.loadSyntax = function ()
 		Include =					{ fg = solarized.blue }, -- preprocessor #include
 		Define =					{ fg = solarized.gray }, -- preprocessor #define
 		Macro =						{ fg = solarized.cyan }, -- same as Define
-		Typedef =					{ fg = solarized.red }, -- A typedef
+		Typedef =					{ fg = solarized.purple }, -- A typedef
 		PreCondit =					{ fg = solarized.cyan }, -- preprocessor #if, #else, #endif, etc.
-		Special =					{ fg = solarized.red }, -- any special symbol
+		Special =					{ fg = solarized.purple }, -- any special symbol
 		SpecialChar =				{ fg = solarized.gray }, -- special character in a constant
-		Tag =						{ fg = solarized.red }, -- you can use CTRL-] on this
-		Delimiter =					{ fg = solarized.cyan }, -- character that needs attention like , or .
+    Tag =						{ fg = solarized.red }, -- you can
+    use CTRL-] on this Delimiter =					{ fg =
+    solarized.cyan }, -- character that needs attention
+    like , or .
 		SpecialComment =			{ fg = solarized.gray }, -- special things inside a comment
 		Debug =						{ fg = solarized.red }, -- debugging statements
 		Underlined =				{ fg = solarized.link, bg = solarized.none, style = 'underline' }, -- text that stands out, HTML links
@@ -209,7 +211,7 @@ theme.loadTreeSitter = function ()
     local treesitter = {
         TSAnnotation =              { fg = solarized.red, style = 'bold' },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         TSAttribute =               { fg = solarized.purple},    -- (unstable) TODO: docs
-        TSBoolean=                  { fg = solarized.orange},    -- For booleans.
+        TSBoolean=                  { fg = solarized.cyan},    -- For booleans.
         TSCharacter=                { fg = solarized.orange},    -- For characters.
         TSConstructor =             { fg = solarized.yellow}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSConstant =                { fg = solarized.purple },    -- For constants
@@ -224,7 +226,7 @@ theme.loadTreeSitter = function ()
         TSLabel =                   { fg = solarized.red }, -- For labels: `label:` in C and `:label:` in Lua.
         TSNamespace =               { fg = solarized.purple },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
-        TSNumber =                  { fg = solarized.orange},    -- For all numbers
+        TSNumber =                  { fg = solarized.cyan},    -- For all numbers
         TSOperator =                { fg = solarized.black}, -- For any operator: `+`, but also `->` and `*` in C.
         TSParameter =               { fg = solarized.green }, -- For parameters of a function.
         TSParameterReference=       { fg = solarized.green },    -- For references to parameters of a function.

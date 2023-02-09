@@ -10,8 +10,8 @@ local bases = {
 }
 
 local solarized = {
-  
-  white =         '#eee8d5',
+
+	white =         '#eee8d5',
 	gray =          '#073642',
 	black =         '#002b36',
 	red =           '#dc322f',

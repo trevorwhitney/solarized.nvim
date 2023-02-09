@@ -1,8 +1,14 @@
-# shaunsingh/solarized.nvim
+# trevorwhitney/solarized.nvim
 
-## based off of the [Solarized Light Theme](https://github.com/altercation/vim-colors-solarized) for Vim
+## based off [shaunsingh/solarized.nvim](https://github.com/shaunsingh/solarized.nvim) which was in turn based off of the [Solarized Light Theme](https://github.com/altercation/vim-colors-solarized) for Vim
 
 <img width="1163" alt="120370710-f2647780-c2e2-11eb-87af-6835fc8a7783" src="https://user-images.githubusercontent.com/71196912/120493248-c8fe2700-c388-11eb-8336-c01789f97e24.png">
+
+## Differences from predecesors
+
+The main goal of this fork is to use less red and orange in the theme. I tend to think of red/orange hues as denoting an error, or a deletion, and like them used as little as possible for other purposes in color schemes.
+
+This fork also adheres to the standard Solarized [color palette](https://ethanschoonover.com/solarized/), which was not the case for the original from `shaunsingh` when I began working on it. That change has since been [upstreamed](https://github.com/shaunsingh/solarized.nvim/pull/16).
 
 ## Features
 
@@ -42,12 +48,12 @@ added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-trees
 Install via your favourite package manager:
 ```vim
 " If you are using Vim-Plug
-Plug 'shaunsingh/solarized.nvim'
+Plug 'trevorwhitney/solarized.nvim'
 ```
 
 ```lua
 -- If you are using Packer
-use 'shaunsingh/solarized.nvim'
+use 'trevorwhitney/solarized.nvim'
 ```
 
 ## Usage

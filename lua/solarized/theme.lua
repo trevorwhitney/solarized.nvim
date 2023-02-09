@@ -27,9 +27,8 @@ theme.loadSyntax = function ()
 		PreCondit =					{ fg = solarized.cyan }, -- preprocessor #if, #else, #endif, etc.
 		Special =					{ fg = solarized.purple }, -- any special symbol
 		SpecialChar =				{ fg = solarized.gray }, -- special character in a constant
-    Tag =						{ fg = solarized.purple }, -- you can use CTRL-] on this 
-    Delimiter =					{ fg = solarized.cyan }, -- character that needs attention
-    like , or .
+		Tag =						{ fg = solarized.purple }, -- you can use CTRL-] on this
+		Delimiter =					{ fg = solarized.cyan }, -- character that needs attention like , or .
 		SpecialComment =			{ fg = solarized.gray }, -- special things inside a comment
 		Debug =						{ fg = solarized.red }, -- debugging statements
 		Underlined =				{ fg = solarized.link, bg = solarized.none, style = 'underline' }, -- text that stands out, HTML links

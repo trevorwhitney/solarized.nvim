@@ -23,7 +23,7 @@ theme.loadSyntax = function ()
 		Include =					{ fg = solarized.blue }, -- preprocessor #include
 		Define =					{ fg = solarized.pink }, -- preprocessor #define
 		Macro =						{ fg = solarized.cyan }, -- same as Define
-		Typedef =					{ fg = solarized.cyan }, -- A typedef
+		Typedef =					{ fg = solarized.red }, -- A typedef
 		PreCondit =					{ fg = solarized.cyan }, -- preprocessor #if, #else, #endif, etc.
 		Special =					{ fg = solarized.red }, -- any special symbol
 		SpecialChar =				{ fg = solarized.pink }, -- special character in a constant

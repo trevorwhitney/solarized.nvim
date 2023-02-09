@@ -26,7 +26,7 @@ local solarized = {
 	magenta =       '#d33682',
 	violet =        '#6c71c4',
 
-  bg_light =       bases['base3'],
+	bg_light =       bases['base3'],
 	bg_light_alt =   bases['base2'],
 	bg_dark =        bases['base03'],
 	bg_dark_alt =    bases['base02'],

@@ -10,6 +10,7 @@ local bases = {
 }
 
 local solarized = {
+  
   white =         '#eee8d5',
 	gray =          '#073642',
 	black =         '#002b36',
@@ -44,8 +45,8 @@ local solarized = {
 	cursor =        '#268bd2',
 	accent =        '#073642',
 
-  error =         '#dc322f',
-  link =          '#2aa198',
+	error =         '#dc322f',
+	link =          '#2aa198',
 
 	none =          'NONE'
 }
